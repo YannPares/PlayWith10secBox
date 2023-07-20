@@ -1,0 +1,50 @@
+  body{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 50% auto auto auto;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    width: 90%;
+    background-color: darkgray;
+}
+.frame1{
+    margin:auto 2rem;
+    background-color: white;
+    border: 1px solid black;
+
+}
+.frame2{
+    margin: 1rem 1rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.frame1row1,
+.frame1row2,
+.frame1row3,
+.frame1row4,
+.frame1row5,
+.frame1row6 {
+    border: 1px solid black;
+
+}
+.frame2row1,
+.frame2row2,
+.frame2row3,
+.frame2row4,
+.frame2row5,
+.frame2row6,
+.frame2row7,
+.frame2row8,
+.frame2row9,
+.frame2row10 {
+    border: 1px solid black;
+
+}
