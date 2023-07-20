@@ -1,38 +1,59 @@
   body{
     display: flex;
-    background-color: white;
+    background-color: darkgrey;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 .main-container{
-    display: grid;
+    display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
-    margin: 50% auto auto auto;
-    grid-template-columns: 60% 40%;
+    margin: 20% auto auto auto;
+    grid-template-columns: 50% 50%;
     height: 100%;
     width: 90%;
     background-color: darkgray;
 }
 .frame1{
-    margin:auto 2rem;
+    display: grid;
+    text-align: center;   
+    width: 80%; 
+    margin:1rem 1rem;
     background-color: white;
     border: 1px solid black;
-
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem;
+    border-radius: 0.5rem;
 }
 .frame2{
-    margin: 1rem 1rem;
+    display: grid;
+    text-align: center;
+    width: 60%;
+    margin: 1rem 2rem;
     background-color: white;
     border: 1px solid black;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem;
+    border-radius: 0.5rem;
 }
-
+.frame1row{
+    height: 2rem;
+}
+.frame2row{
+    height: 1rem;
+}
+.chooseUser{
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
 .frame1row1,
 .frame1row2,
 .frame1row3,
 .frame1row4,
 .frame1row5,
 .frame1row6 {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 
 }
 .frame2row1,
@@ -45,6 +66,20 @@
 .frame2row8,
 .frame2row9,
 .frame2row10 {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 
 }
+
+
+
+@media (min-width: 1050px){
+.main-container{
+    flex-flow: row;
+}
+
+
+
+
+}
+
+/* media query main-container no flexflow column */
