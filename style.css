@@ -11,7 +11,7 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    margin: 20% auto auto auto;
+    margin: 5% auto auto auto;
     grid-template-columns: 50% 50%;
     height: 100%;
     width: 90%;
@@ -21,6 +21,7 @@
     display: grid;
     text-align: center;   
     width: 80%; 
+    height: 100%;
     margin:1rem 1rem;
     background-color: white;
     border: 1px solid black;
@@ -31,6 +32,7 @@
     display: grid;
     text-align: center;
     width: 60%;
+    height: 100%;
     margin: 1rem 2rem;
     background-color: white;
     border: 1px solid black;
@@ -39,42 +41,75 @@
 }
 .frame1row{
     height: 2rem;
+    padding: 0.2rem;
 }
 .frame2row{
     height: 1rem;
+    padding: 0.35rem;
 }
 .chooseUser{
-    line-height: 4rem;
+    line-height: 3rem;
     font-size: 1.5rem;
 }
-.frame1row1,
-.frame1row2,
-.frame1row3,
-.frame1row4,
-.frame1row5,
-.frame1row6 {
-    /*border: 1px solid black;*/
-
-}
-.frame2row1,
-.frame2row2,
-.frame2row3,
-.frame2row4,
-.frame2row5,
-.frame2row6,
-.frame2row7,
-.frame2row8,
-.frame2row9,
-.frame2row10 {
-    /*border: 1px solid black;*/
-
+.userNameInput{
+    border-radius: 1rem;
+    border-style: dotted;
 }
 
+.playingButton{
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+}
+.playingButton:hover{
+    background-color: grey;
+    transform: scale(1.05);
+}
 
+.userScores{
+    line-height: 3rem;
+    font-size: 1.2rem;
+}
+.name{
+    font-size: 1.1rem;
+    padding-left: 25%;
+    text-align:start;
+}
+.currentStatus{
+    font-style: italic;
+}
+
+/* media media media media media media media media media media media */
 
 @media (min-width: 1050px){
 .main-container{
     flex-flow: row;
+    margin: 7% auto;
+}
+.frame1,
+.frame2 {
+    height: 35rem;
+}
+.chooseUser{
+    font-size: 4rem;
+}
+.userScores{
+    font-size: 3.5rem;
+}
+.userName{
+    font-size: 3rem;
+}
+.userNameInput{
+    font-size: 2rem;
+}
+.playingButton{
+    font-size: 3rem;
+}
+.name{
+    font-size: 2rem;
+}
+.currentStatus{
+    font-size: 1.5rem;
 }
 
 
